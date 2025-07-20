@@ -1,0 +1,376 @@
+.box-certification-display{
+    display: flex;
+    flex-direction: column;
+    /* background-color: lightgoldenrodyellow; */
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+    
+}
+
+.box-certification-display .main{
+    text-align: center;
+    font-family: 'Product Sans';
+}
+
+.box-certification-display .main{
+    font-weight: 700;
+    font-size: 56px;
+    color: #EBEAEB;
+}
+
+.box-certification-display .sub{
+    text-align: center;
+    font-family: 'Damion';
+    font-weight: 400;
+    font-size: 34px;
+    color: #F2B335;
+    margin-bottom: 0;
+}
+
+.project-certification-display{
+    margin: 0;
+    padding: 0 0px 0 0px;
+
+    margin-top: 55px;
+
+    /* background-color: white; */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text-certification-timeline-work{
+    font-family: 'Product Sans';
+    font-size: 21px;
+    color: #EBEAEB;
+    font-weight: 400;
+
+    margin-bottom: 0;
+    
+}
+
+.certification-card-slider{
+    display: flex;
+    flex-direction: column;
+}
+
+.certification-card-compiler{
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline-certification-container{
+    display: flex;
+    /* position: absolute; */
+
+    padding-left: clamp(120px, 17vw, 130px);
+    padding-right: clamp(140px, 17vw, 175px);
+    
+    width: 100%;
+
+    align-items: center;
+    
+    /* top: 0px;     */
+}
+
+.line-certification-work{
+    height: 2px;
+    background-color: #FECC00;
+    flex-grow: 1;
+    margin: 0 20px 0 20px;
+}
+
+
+.project-certification-carousel{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1rem;
+    padding-bottom: 3rem; /* Space for scrollbar */
+
+    background-color: transparent;
+
+    position: relative;
+}
+
+.project-certification-card-container{
+    display: flex;
+    flex: 0 0 auto;
+    min-width: 340px;
+    min-height: 530px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    margin-top: 60px;
+}
+
+
+
+.card-project-certification{
+    width: 304px;
+    height: 33rem;
+
+    border: none;
+    border-radius: 1rem;
+
+    background-color: #EBEAEB;
+
+    display: flex;
+    align-items: center;
+}
+
+.cardBody-project-certification{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    margin-right: 7px;
+    align-items: center;
+}
+
+.cardBody-project-certification h5{
+    font-family: 'Product Sans';
+    font-weight: 700;
+    font-size: 22px;
+
+    margin-top: 10px;
+
+    width: 100%;
+    max-height: 27px;
+    overflow: hidden;
+    display: -webkit-box;
+    
+    -webkit-line-clamp: 1; /* Limit to 5 lines (adjust based on font size) */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word; /* Break long words */
+    
+}
+
+.cardBody-project-certification h6{
+    font-family: 'Product Sans';
+    font-weight: 700;
+    font-size: 18px;
+
+    width: 100%;
+    max-height: 44px;
+    overflow: hidden;
+    display: -webkit-box;
+    
+    -webkit-line-clamp: 2; /* Limit to 5 lines (adjust based on font size) */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word; /* Break long words */
+    
+}
+
+.cardBody-project-certification p{
+    font-family: 'Product Sans';
+    font-weight: 400;
+    font-size: 19px;
+
+    margin-top: 10px;
+
+    min-height: 144px;
+    max-height: 144px;
+    overflow: hidden;
+    display: -webkit-box;
+    
+    -webkit-line-clamp: 5; /* Limit to 5 lines (adjust based on font size) */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word; /* Break long words */
+    
+}
+
+.cardBody-project-certification button{
+    /* --cardWidth: calc(100%) */
+    /* width: var(--cardWidth); */
+    width: 90%;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 2rem;
+
+    position: absolute;
+    bottom: 25px;
+    
+    font-family: 'Product Sans';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.cardBody-project-certification button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.podomoro-theme{
+    background-color: #1e2a3a !important;
+}
+
+
+.imageFrame-certification-logo{
+    display: flex;
+    z-index: 0;
+    
+    width: 95%;
+    height: 12rem;
+    
+    border: solid white 4px;
+    background-color: white;
+    border-radius: 1rem 1rem 1rem 1rem;
+
+    overflow: hidden; /* This should be on the container */
+    box-sizing: border-box;
+
+    padding: 2rem;
+    margin-top: 0.5rem;
+}
+
+.imageFrame-certification-logo img{
+    display: flex;
+    width: 100%; /* Make image fill container width */
+    height: 100%; /* Make image fill container height */
+    object-fit: contain;
+}
+
+@media (max-width: 834px) {
+    .project-certification-display{
+        margin: 0;
+        padding: 0 0px 0 0px;
+
+        margin-top: 55px;
+
+        /* background-color: white; */
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .box-certification-display .main{
+        font-weight: 700;
+        font-size: 38px;
+        color: #EBEAEB;
+    }
+
+    .box-certification-display .sub{
+        text-align: center;
+        font-family: 'Damion';
+        font-weight: 400;
+        font-size: 32px;
+        color: #F2B335;
+        margin-bottom: 0;
+    }
+
+    .project-certification-display{
+        margin: 0;
+        padding: 0 0px 0 0px;
+
+        margin-top: 55px;
+
+        /* background-color: white; */
+        display: flex;
+        min-width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .project-certification-carousel{
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 1rem;
+        padding-bottom: 3rem; /* Space for scrollbar */
+
+        background-color: transparent;
+    }
+
+    .project-certification-card-container{
+        display: flex;
+        flex: 0 1 auto;
+        
+        min-width: auto;
+        width: clamp(270px, 44vw, 300px);
+
+        min-height: 530px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .cardBody-project-certification h5{
+        font-family: 'Product Sans';
+        font-weight: 700;
+        font-size: 20px;
+
+        margin-top: 10px;
+
+        width: 100%;
+        max-height: 27px;
+        overflow: hidden;
+        display: -webkit-box;
+        
+        -webkit-line-clamp: 1; /* Limit to 5 lines (adjust based on font size) */
+        -webkit-box-orient: vertical;
+        word-wrap: break-word; /* Break long words */
+        
+    }
+
+    .cardBody-project-certification h6{
+        font-family: 'Product Sans';
+        font-weight: 700;
+        font-size: 18px;
+
+        width: 100%;
+        max-height: 44px;
+        overflow: hidden;
+        display: -webkit-box;
+        
+        -webkit-line-clamp: 2; /* Limit to 5 lines (adjust based on font size) */
+        -webkit-box-orient: vertical;
+        word-wrap: break-word; /* Break long words */
+        
+    }
+
+    .cardBody-project-certification p{
+        font-family: 'Product Sans';
+        font-weight: 400;
+        font-size: 18px;
+
+        margin-top: 10px;
+
+        min-height: 0px;
+        max-height: 135px;
+        overflow: hidden;
+        display: -webkit-box;
+        
+        -webkit-line-clamp: 5; /* Limit to 5 lines (adjust based on font size) */
+        -webkit-box-orient: vertical;
+        word-wrap: break-word; /* Break long words */
+        
+    }
+
+    .cardBody-project-certification button{
+        width: 90%;
+        background-color: white;
+        border: none;
+        color: black;
+        border-radius: 2rem;
+
+        position: absolute;
+        bottom: 30px;
+        
+        font-family: 'Product Sans';
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}

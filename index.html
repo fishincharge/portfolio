@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="assets/logo.png" type="image/png">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Hendy Rahardja</title>
+        
+        <meta name="description" content="Hendy Rahardja - Software Engineer specializing in Flutter, Dart, React, and modern web development. Explore my portfolio showcasing mobile apps, web projects, and full-stack solutions.">
+        <meta name="keywords" content="Hendy Rahardja, Software Engineer, Flutter Developer, Dart Programmer, React Developer, JavaScript, HTML5, CSS3, Bootstrap, Mobile App Developer">
+        <meta property="og:title" content="Hendy Rahardja | Software Engineer Portfolio">
+        <meta property="og:description" content="Professional portfolio of Hendy Rahardja - Software Engineer specializing in Flutter, React, and web development. View my projects and technical expertise.">
+        <meta property="og:type" content="website">
+        <!-- <meta property="og:url" content="https://www.hendy-rahardja.com"> -->
+        <meta property="og:locale" content="id_ID">
+        <meta name="author" content="Hendy Rahardja">
+        <meta name="robots" content="index, follow">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/first_section.css">
+        <link rel="stylesheet" href="style/second_section.css">
+        <link rel="stylesheet" href="style/third_section.css">
+        <link rel="stylesheet" href="style/fourth_section.css">
+        <link rel="stylesheet" href="style/fifth_section.css">
+        <link rel="stylesheet" href="style/certification_section.css">
+        <link rel="stylesheet" href="style/six_section.css">
+
+        <link rel="stylesheet" href="style/modal.css">
+
+        <link rel="stylesheet" href="style/general.css">
+
+        <link rel="stylesheet" href="style/font.css">
+        
+    </head>
+
+    <body>
+
+        <!-- Modal -->
+        <div class="modal-experience-detail modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Experience Detail</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <img id="id-company-logo" src="assets/pru-logo.png" alt="Company Logo" class="company-logo img-fluid rounded">
+                        </div>
+                        <div class="col-md-8">
+                            <h1 class="mb-2 mt-4" id="id-modal-title"></h1>
+                            <h2 class="h4 text-muted mb-1" id="id-modal-subtitle"></h2>
+                            <h2 class="h6 text-muted mb-3" id="id-modal-second-subtitle"></h2>
+                            <div class="work-description">
+                                <p class="lead" id="id-modal-description-tag"></p>
+                                <p class="text-justify" id="id-modal-description"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary button-visit-site" id="id-button-visit">Visit Site</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="header-wrapper">
+            <div class="header">
+                <h1 class="text-header">Hendy Rahardja</h1>
+                <h1 class="text-header contact-link" id="contactHeader">Contact</h1>
+            </div>
+        </div>
+
+        <div class="general-padding">
+                <div class="box-first-section">
+                    <div class="first-section-text-box">
+                        <div class="first-section-text-frame">
+                            <h1>Hello, I'm</h1>
+                            <h1>Hendy Rahardja</h1>
+                            <h2>Mobile & Web Engineer</h2>
+                            <p>I’m a Software Engineer in mobile and web application development. Currently, I ensure quality and reliability as a QA Engineer at Prudential.</p>
+                        </div>
+                    </div>
+                    <div class="first-section-display">
+                        <div class="image-frame">
+                            <h2>Hello!, I'm Hendy</h2>
+                            <div class="background-title">
+                                <h1>Software Engineer</h1>
+                                <img src="assets/title-background.png" alt="background title"></img>
+                            </div>
+                            <!-- <div class="gradient-layer"></div> -->
+                            <div class="photo-profile">
+                                <img src="assets/profile-web.png" alt="photo profile"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="box-second-section">
+                    <h2 class="sub">From Cubicles to Code</h2>
+                    <h1 class="main">My Professional Journey</h1>
+
+                    <div class="work-experience-display">
+                        <div class="work-experience-carousel carousel" id="carousel">
+
+                            <div class="work-card-slider">
+                                <div class="timeline-container">
+                                    <h4 class="text-timeline-work">Present</h4>
+                                    <div class="line-work"></div>
+                                    <h4 class="text-timeline-work">2024</h4>
+                                </div>
+                            
+                                <div class="work-card-compiler">
+                                    <div class="work-experience-card-container" id="id-first-card">
+                                        <div class="card card-work-experience card-experience" data-company-name="Prudential">
+                                            <div class="imageFrame-company-logo">
+                                                <img src="assets/pru-logo.png" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body cardBody-work-experience">
+                                                <h5 class="card-title">QA Engineer</h5>
+                                                <h6 class="card-subtitle">27 August 2024 - Present</h6>
+                                                <p class="card-text">As a QA Engineer, I ensure flawless digital experiences through automated testing, API validation, and database checks. Using Katalon (Groovy), I streamline regression testing, while Postman verifies API reliability. My SQL expertise (DBeaver) safeguards data integrity across systems. Actively involved in Prudential’s key projects, I blend technical rigor with Agile collaboration to deliver defect-free releases. My work bridges development and quality, optimizing both speed and precision in software delivery.</p>
+                                                <button type="button" class="btn btn-primary button-work-experience button-detail" data-bs-toggle="modal" data-bs-target="#exampleModal">Show More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="work-experience-card-container">
+                                        <div class="card card-work-experience card-experience grey" data-company-name="Prudential">
+                                            <div class="imageFrame-company-logo">
+                                                <img src="assets/pru-logo.png" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body cardBody-work-experience">
+                                                <h5 class="card-title">UAT - Tester (Internship)</h5>
+                                                <h6 class="card-subtitle">19 Febuary 2024 - 18 August 2024</h6>
+                                                <p class="card-text">During my UAT internship at Prudential, I performed end-to-end user acceptance testing on key digital products. Working closely with QA teams and business stakeholders, I executed manual test cases, identified UI/UX issues, and logged defects in JIRA to ensure systems met business requirements. I gained hands-on experience in test scenario creation and validation processes while contributing to multiple projects. This role strengthened my understanding of software quality assurance from both technical and user perspectives, while developing my skills in test documentation and cross-functional collaboration within an Agile environment. The experience provided valuable insight into insurance industry digital solutions and the critical role of UAT in product development.</p>
+                                                <button type="button" class="btn btn-primary button-work-experience button-detail"  data-bs-toggle="modal" data-bs-target="#exampleModal">Show More</button>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="box-third-display">
+                    <h2 class="sub">Beyond Theory</h2>
+                    <h1 class="main">My Projects</h1>
+
+                    <div class="project-experience-display">
+                        <div class="project-experience-carousel carousel" id="projectCarousel">
+
+                            <div class="project-card-slider">
+                                <div class="project-timeline-container">
+                                    <h4 class="project-text-timeline-work">Present</h4>
+                                    <div class="project-line-work"></div>
+                                    <h4 class="project-text-timeline-work">2024</h4>
+                                </div>
+
+                                <div class="project-card-compiler">
+                                    <div class="project-experience-card-container">
+                                        <div class="card card-project-experience card-experience" data-company-name="Airlangga Dhanupoyo" data-website-link="https://www.airlangga-dhanupoyo.com/">
+                                            <div class="imageFrame-project-logo">
+                                                <img src="assets/airlangga.png" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body cardBody-project-experience">
+                                                <h5 class="card-title">Airlangga Dhanupoyo</h5>
+                                                <h6 class="card-subtitle">Website</h6>
+                                                <p class="card-text">As a freelance web developer, I designed and developed a responsive website for an emerging book publishing startup. The project involved creating an engaging digital platform to showcase their catalog, authors, and services while providing seamless user experience across devices.</p>
+                                                <button type="button" class="btn btn-primary button-work-experience button-project-detail" data-bs-toggle="modal" data-bs-target="#exampleModal">Show More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-experience-card-container">
+                                        <div class="card card-project-experience card-experience" data-company-name="Gold Podomoro" data-website-link="https://www.goldpodomoro.com/">
+                                            <div class="imageFrame-project-logo podomoro-theme">
+                                                <img src="assets/title-podomoro.png" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body cardBody-project-experience">
+                                                <h5 class="card-title">Gold Podomoro</h5>
+                                                <h6 class="card-subtitle">Website</h6>
+                                                <p class="card-text">I designed and developed a professional e-commerce website for Gold Podomoro, a gold trading startup, to establish their digital presence and facilitate secure transactions. The responsive platform features an intuitive product catalog with real-time gold price integration, customer account management, and secure payment gateways. Built with modern web technologies including HTML5, CSS3, Bootstrap and JavaScript, the site prioritizes user experience with fast loading times and mobile optimization. I implemented robust security measures for sensitive financial data and created an admin dashboard for inventory management. This project enhanced my skills in e-commerce development, API integration, and creating trustworthy digital platforms for financial services, while helping the client launch their online gold trading operations.</p>
+                                                <button type="button" class="btn btn-primary button-work-experience button-project-detail" data-bs-toggle="modal" data-bs-target="#exampleModal">Show More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box-fourth-display">
+                    <h2 class="sub">Exploring The Tools</h2>
+                    <h1 class="main">My Skillsets</h1>
+
+                    <div class="project-tools-display">
+                        <div class="project-tools-carousel carousel" id="productCarousel">
+
+                            <div class="carousel-slide">
+
+                                <div class="project-tools-card-container">
+                                    <div class="card card-tools-experience">
+                                        <div class="imageFrame-tools-logo">
+                                            <img src="assets/java.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body cardBody-tools-experience">
+                                            <h5 class="card-title">JAVA</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-tools-card-container">
+                                    <div class="card card-tools-experience">
+                                        <div class="imageFrame-tools-logo">
+                                            <img src="assets/flutter.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body cardBody-tools-experience">
+                                            <h5 class="card-title">Flutter</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-tools-card-container">
+                                    <div class="card card-tools-experience">
+                                        <div class="imageFrame-tools-logo">
+                                            <img src="assets/react.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body cardBody-tools-experience">
+                                            <h5 class="card-title">React</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-tools-card-container">
+                                    <div class="card card-tools-experience">
+                                        <div class="imageFrame-tools-logo">
+                                            <img src="assets/bootstrap.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body cardBody-tools-experience">
+                                            <h5 class="card-title">Bootstrap</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-tools-card-container">
+                                    <div class="card card-tools-experience">
+                                        <div class="imageFrame-tools-logo">
+                                            <img src="assets/katalon.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body cardBody-tools-experience">
+                                            <h5 class="card-title">Katalon</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-tools-card-container">
+                                    <div class="card card-tools-experience">
+                                        <div class="imageFrame-tools-logo">
+                                            <img src="assets/dart.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body cardBody-tools-experience">
+                                            <h5 class="card-title">Dart</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-tools-card-container">
+                                    <div class="card card-tools-experience">
+                                        <div class="imageFrame-tools-logo">
+                                            <img src="assets/javascript.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body cardBody-tools-experience">
+                                            <h5 class="card-title">Javascript</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box-fifth-display">
+                    <h2 class="sub">From Classroom to Codebase</h2>
+                    <h1 class="main">My Education Journey</h1>
+
+                    <div  class="education-banner-wrapper">
+                        <div class="education-banner-frame">
+                            <div class="education-imagelogo">
+                                <img src="assets/binus.png" alt="..." class="imgLogo">
+                            </div>
+                            <div class="education-banner-information">
+                                <h1>Information Systems Graduate</h1>
+                                <p>September 2019 - August 2023</p>
+                                <p>Grade: 3.75</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-certification-display">
+                    <h2 class="sub">Certified, Qualified, Ready</h2>
+                    <h1 class="main">My Certification</h1>
+
+                    <div class="project-certification-display">
+                        <div class="project-certification-carousel carousel" id="certificationCarousel">
+
+                            <div class="certification-card-slider">
+                                <div class="timeline-certification-container">
+                                    <h4 class="text-certification-timeline-work">2024</h4>
+                                    <div class="line-certification-work"></div>
+                                    <h4 class="text-certification-timeline-work">2023</h4>
+                                    <div class="line-certification-work"></div>
+                                    <h4 class="text-certification-timeline-work">2023</h4>
+                                    <div class="line-certification-work"></div>
+                                    <h4 class="text-certification-timeline-work">2023</h4>
+                                    <div class="line-certification-work"></div>
+                                    <h4 class="text-certification-timeline-work">2023</h4>
+                                </div>
+                                
+                                <div class="certification-card-compiler">
+                                    <div class="project-certification-card-container">
+                                        <div class="card card-project-certification card-certification" data-certification-link="https://drive.google.com/thumbnail?id=1_XtSgrzJsr4IeLGhaSD8epTNH9nTQgwd&sz=s4000">
+                                            <div class="imageFrame-certification-logo">
+                                                <img src="assets/pyridam-logo.png" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body cardBody-project-certification">
+                                                <h5 class="card-title">3rd Championship</h5>
+                                                <h6 class="card-subtitle">Pyridam Business Competition</h6>
+                                                <p class="card-text">Awarded 3rd place in Pyridam, a national business team competition focused on innovating healthcare through digital solutions.</p>
+                                                <button type="button" class="btn btn-primary button-work-certification button-certification-detail">Show Certificate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-certification-card-container">
+                                        <div class="card card-project-certification card-certification" data-certification-link="https://drive.google.com/thumbnail?id=1-mVBvxUXGfg5fQegDtYtsYw5Fy98B95P&sz=s4000">
+                                            <div class="imageFrame-certification-logo">
+                                                <img src="assets/cli-logo.png" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body cardBody-project-certification">
+                                                <h5 class="card-title">TOEFL Certificate</h5>
+                                                <h6 class="card-subtitle">Issued by Centre of Language Improvement</h6>
+                                                <p class="card-text">Demonstrated advanced English proficiency with exceptional performance in: Listening Comprehension & Reading/Vocabulary.</p>
+                                                <button type="button" class="btn btn-primary button-work-certification button-certification-detail">Show Certificate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-certification-card-container">
+                                        <div class="card card-project-certification card-certification" data-certification-link="https://drive.google.com/thumbnail?id=1PPQ8t8YuR4ThlXLeftCUrJi3lA9s5Vmr&sz=s4000">
+                                            <div class="imageFrame-certification-logo">
+                                                <img src="assets/google-digital-garage.png" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body cardBody-project-certification">
+                                                <h5 class="card-title">Google Certificate</h5>
+                                                <h6 class="card-subtitle">Fundamental of Digital Marketing</h6>
+                                                <p class="card-text">Completed Google's official 40-hour certification covering core digital marketing concepts, including: SEO, SEM, email marketing & social media strategy</p>
+                                                <button type="button" class="btn btn-primary button-work-certification button-certification-detail">Show Certificate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-certification-card-container">
+                                        <div class="card card-project-certification card-certification" data-certification-link="https://drive.google.com/thumbnail?id=1q9dIBbhSMuSyInm09HXhEDrLd09NS3-_&sz=s4000">
+                                            <div class="imageFrame-certification-logo">
+                                                <img src="assets/Revou-Logo.png" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body cardBody-project-certification">
+                                                <h5 class="card-title">Revou Certification</h5>
+                                                <h6 class="card-subtitle">Introduction to Software Engineering</h6>
+                                                <p class="card-text">Completed a structured program covering foundational software engineering principles, including: Full-Stack Fundamentals, Modern Tools, Practical Application</p>
+                                                <button type="button" class="btn btn-primary button-work-certification button-certification-detail">Show Certificate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-certification-card-container">
+                                        <div class="card card-project-certification card-certification" data-certification-link="https://drive.google.com/thumbnail?id=1pg3JHhG9VSsyUw0oYn5rSKAiHxuMqKcz&sz=s4000">
+                                            <div class="imageFrame-certification-logo">
+                                                <img src="assets/Great_Learning_Logo.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body cardBody-project-certification">
+                                                <h5 class="card-title">Flutter for Beginners</h5>
+                                                <h6 class="card-subtitle">Great Learning Certified</h6>
+                                                <p class="card-text">Completed a comprehensive introduction to Flutter, Google’s UI toolkit for building natively compiled cross-platform applications.</p>
+                                                <button type="button" class="btn btn-primary button-work-certification button-certification-detail">Show Certificate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box-six-display contactSection" id="contactSection">
+                    <h2 class="sub">Make the Right Call</h2>
+                    <h1 class="main">My Contact</h1>
+
+                    <div class="container-xs text-center mt-5 contact-box">    
+                        <div class="row">
+                            <div class="col">
+                                <h4>Instagram</h4>
+                            </div>
+                            <div class="col col-desktop">
+                                <h4>Whatsapp</h4>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">                        
+                                <button type="button" class="btn btn-primary contact-button" id="button-contact-instagram">
+                                    <img src="assets/Instagram_icon.png" alt="Logo" class="btn-logo"> 
+                                    @hendyrahardja
+                                </button>
+                            </div>
+                            <div class="col col-mobile">
+                                <h4>Whatsapp</h4>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary contact-button" id="button-contact-whatsapp">
+                                    <img src="assets/WhatsApp.png" alt="Logo" class="btn-logo"> 
+                                    +62 878-8718-9008
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col">
+                                <h4>LinkedIn</h4>
+                            </div>
+                            <div class="col col-desktop">
+                                <h4>Email</h4>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary contact-button" id="button-contact-linkedin">
+                                    <img src="assets/LinkedIn_logo_initials.png" alt="Logo" class="btn-logo"> 
+                                    Hendy Rahardja
+                                </button>
+                            </div>
+                            <div class="col col-mobile">
+                                <h4>Email</h4>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary contact-button" id="button-contact-email">
+                                <img src="assets/email.png" alt="Logo" class="btn-logo-email"> 
+                                hendyr@protonmail.com                        
+                                </button>        
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+        </div>
+
+    </body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="script/carousel.js"></script>
+    <script src="script/modal.js"></script>
+    <script src="script/contact.js"></script>
+    <script src="script/header.js"></script>
+    <script src="script/mobile_responsive_design.js"></script>
+    <script src="script/certification.js"></script>
+
+</html>

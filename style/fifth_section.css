@@ -1,0 +1,248 @@
+.box-fifth-display{
+    display: flex;
+    flex-direction: column;
+    /* background-color: lightgoldenrodyellow; */
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+    
+}
+
+.box-fifth-display .main{
+    text-align: center;
+    font-family: 'Product Sans';
+}
+
+.box-fifth-display .main{
+    font-weight: 700;
+    font-size: 56px;
+    color: #EBEAEB;
+}
+
+.box-fifth-display .sub{
+    text-align: center;
+    font-family: 'Damion';
+    font-weight: 400;
+    font-size: 34px;
+    color: #F2B335;
+    margin-bottom: 0;
+}
+
+.education-banner-wrapper{
+    background: radial-gradient(circle, #FFFFFF 0%, #000000 100%);
+    border-radius: 15px; /* Slightly larger than inner radius */
+    padding: 3px; /* Border thickness */
+    display: flex;
+
+    min-width: 700px;
+    width: 100%;
+    max-width: 1300px;
+
+    height: 100%;
+
+    margin-top: 45px;
+}
+
+.education-banner-frame{
+    display: flex;
+    /* background-color: lightgreen; */
+    justify-content: center;
+    align-items: center;
+
+
+    border-radius: 15px;
+
+    height: clamp(250px, 25vw,350px);
+
+    min-width: 700px;
+    width: 100%;
+    max-width: 1300px;
+
+    background-image: url('../assets/card-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.education-banner-information{
+    width: 450px;
+    /* background-color: lightcoral; */
+    margin-left: 20px;
+}
+
+.education-banner-information h1,
+.education-banner-information p{
+    font-family: 'Product Sans';
+    color: #EBEAEB;
+    margin: 0;
+}
+
+.education-banner-information h1{
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 52px);
+}
+
+.education-banner-information p{
+    font-weight: 400;
+    font-size: clamp(16px, 2.2vw, 28px);
+}
+
+.education-imagelogo{
+    display: flex;
+    z-index: 0;
+    
+    min-width: 10rem;
+    min-height: 10rem;
+    width: 10rem;
+    height: 10rem;
+    
+    border: none;
+    background-color: white;
+    border-radius: 5rem;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden; 
+    box-sizing: border-box;
+
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0px;
+}
+
+.imgLogo{
+    border: none;
+    
+    display: flex;
+    width: 90%; /* Make image fill container width */
+    height: 90%; /* Make image fill container height */
+    object-fit: contain;
+}
+
+@media (max-width: 834px){
+    .box-fifth-display{
+        display: flex;
+        flex-direction: column;
+        /* background-color: lightgoldenrodyellow; */
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 90px;
+        
+    }
+
+    .box-fifth-display .main{
+        font-weight: 700;
+        font-size: 38px;
+        color: #EBEAEB;
+    }
+
+    .box-fifth-display .sub{
+        text-align: center;
+        font-family: 'Damion';
+        font-weight: 400;
+        font-size: 32px;
+        color: #F2B335;
+        margin-bottom: 0;
+    }
+
+    .education-banner-wrapper{
+        background: radial-gradient(circle, #FFFFFF 0%, #000000 100%);
+        border-radius: 15px; /* Slightly larger than inner radius */
+        padding: 3px; /* Border thickness */
+        display: flex;
+
+        min-width: 100px;
+        width: 100%;
+        max-width: 1300px;
+
+        height: 100%;
+
+        margin-top: 45px;
+    }
+
+    .education-banner-frame{
+        display: flex;
+        /* background-color: lightgreen; */
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+
+        border-radius: 15px;
+
+        height: clamp(350px, 25vw,350px);
+
+        min-width: 100px;
+        width: 100%;
+        max-width: 1300px;
+
+        padding: 0 25px 0 25px;
+
+        background-image: url('../assets/card-background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .education-banner-information{
+        width: 100%;
+        /* background-color: lightcoral; */
+        margin-left: 0px;
+    }
+
+    .education-banner-information h1,
+    .education-banner-information p{
+        font-family: 'Product Sans';
+        color: #EBEAEB;
+        margin: 0;
+        text-align: center;
+    }
+
+    .education-banner-information h1{
+        font-weight: 700;
+        font-size: clamp(24px, 4vw, 52px);
+        margin-bottom: 10px;
+    }
+
+    .education-banner-information p{
+        font-weight: 400;
+        font-size: clamp(14px, 2.2vw, 28px);
+    }
+
+    .education-imagelogo{
+        display: flex;
+        z-index: 0;
+        
+        min-width: 7rem;
+        min-height: 7rem;
+        width: 7rem;
+        height: 7rem;
+        
+        border: none;
+        background-color: white;
+        border-radius: 5rem;
+
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden; 
+        box-sizing: border-box;
+
+        padding: 0.7rem;
+        margin-top: 0.5rem;
+        margin-bottom: 30px;
+    }
+
+    .imgLogo{
+        border: none;
+        
+        display: flex;
+        width: 90%; /* Make image fill container width */
+        height: 90%; /* Make image fill container height */
+        object-fit: contain;
+    }
+
+}

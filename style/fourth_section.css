@@ -1,0 +1,226 @@
+.box-fourth-display{
+    margin-top: 100px;
+}
+
+.box-fourth-display h1{
+    text-align: center;
+    font-family: 'Product Sans';
+}
+
+.box-fourth-display h1{
+    font-weight: 700;
+    font-size: 48px;
+    color: #EBEAEB;
+}
+
+.box-fourth-display h2{
+    text-align: center;
+    font-family: 'Damion';
+    font-weight: 400;
+    font-size: 34px;
+    color: #F2B335;
+    margin-bottom: 0;
+}
+
+.project-tools-display{
+    margin: 0;
+    padding: 0 0px 0 0px;
+    margin-top: 0px;
+    /* background-color: lightgreen; */
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    margin-top: 45px;
+}
+
+.project-tools-carousel{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1rem;
+    padding-bottom: 3rem; /* Space for scrollbar */
+
+    background-color: transparent;
+}
+
+.project-tools-card-container{
+    display: flex;
+    flex: 0 0 auto;
+    min-width: 130px;
+
+    /* background-color: lightgrey; */
+
+    min-height: 220px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.card-tools-experience{
+    width: 9rem;
+    height: 14rem;
+
+    border: none;
+    border-radius: 5rem;
+
+    background-color: #EBEAEB;
+
+    display: flex;
+    align-items: center;
+}
+
+.cardBody-tools-experience h5{
+    font-family: 'Product Sans';
+    font-weight: 400;
+    font-size: 21px;
+    text-align: center;
+
+    margin-top: 0px;
+
+    width: 100%;
+    
+}
+
+.imageFrame-tools-logo{
+    display: flex;
+    z-index: 0;
+    
+    width: 7rem;
+    height: 7rem;
+    
+    border: none;
+    background-color: white;
+    border-radius: 4rem;
+
+    overflow: hidden; 
+    box-sizing: border-box;
+
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+}
+
+.imageFrame-tools-logo img{
+    border: none;
+    display: flex;
+    width: 100%; /* Make image fill container width */
+    height: 100%; /* Make image fill container height */
+    object-fit: contain;
+}
+
+.carousel-slide{
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width: 834px){
+    .carousel-slide{
+        scroll-snap-align: start;
+        flex: 0 0 500px; /* Fixed width (no grow/shrink) */
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap into 2 rows */
+        align-content: flex-start; /* Align rows to the top */
+        gap: 1rem; /* Space between items */
+        padding: 0.5rem; /* Inner padding */
+        background: rgba(0, 0, 0, 0.05); /* Optional: Visual guide */
+
+    }
+
+    .box-fourth-display h1{
+        font-weight: 700;
+        font-size: 38px;
+        color: #EBEAEB;
+    }
+
+    .box-fourth-display h2{
+        text-align: center;
+        font-family: 'Damion';
+        font-weight: 400;
+        font-size: 32px;
+        color: #F2B335;
+        margin-bottom: 0;
+    }
+
+    .project-tools-carousel{
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 1rem;
+        padding-bottom: 3rem; /* Space for scrollbar */
+
+        background-color: transparent;
+    }
+
+    .project-tools-card-container{
+        display: flex;
+        flex: 0 0 auto;
+        min-width: auto;
+
+        /* background-color: lightgrey; */
+
+        min-height: auto;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .card-tools-experience{
+        width: 6rem;
+        height: 10rem;
+
+        border: none;
+        border-radius: 5rem;
+
+        background-color: #EBEAEB;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .cardBody-tools-experience h5{
+        font-family: 'Product Sans';
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+
+        margin-top: 0px;
+
+        width: 100%;
+        
+    }
+
+    .imageFrame-tools-logo{
+        display: flex;
+        z-index: 0;
+        
+        width: 5rem;
+        height: 5rem;
+        
+        border: none;
+        background-color: white;
+        border-radius: 4rem;
+
+        overflow: hidden; 
+        box-sizing: border-box;
+
+        padding: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0px;
+    }
+
+    .imageFrame-tools-logo img{
+        border: none;
+        display: flex;
+        width: 100%; /* Make image fill container width */
+        height: 100%; /* Make image fill container height */
+        object-fit: contain;
+    }
+
+}

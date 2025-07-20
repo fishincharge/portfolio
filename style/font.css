@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'PlayFair Display';
+    src: url(../font/PlayfairDisplayRegular-ywLOY.ttf) format(truetype);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayFair Display';
+    src: url(../font/PlayfairDisplayBold-nRv8g.ttf) format(truetype);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url(../font/ProductSans-Bold.ttf) format(truetype);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url(../font/ProductSans-Regular.ttf) format(truetype);
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url(../font/ProductSans-Light.ttf) format(truetype);
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family: 'Product Sans';
+    src: url(../font/ProductSans-Thin.ttf) format(truetype);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Damion';
+    src: url(../font/Damion.ttf) format(truetype);
+    font-weight: 400;
+    font-style: normal;
+}

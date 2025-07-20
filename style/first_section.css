@@ -1,0 +1,313 @@
+.box-first-section{
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+}
+
+
+.first-section-text-box{
+    /* background-color: lightgreen; */
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 10px;
+
+}
+
+.first-section-text-frame{
+    display: flex;
+    flex-direction: column;
+    max-width: 584px;
+    /* background-color: lightgray; */
+}
+
+.first-section-text-box h1{
+    font-family: 'PlayFair Display';
+    font-weight: 700;
+    font-size: clamp(14px, 4vw, 48px);
+    color: #EBEAEB;
+
+    margin: 0;
+}
+
+.first-section-text-box h2{
+    font-family: 'PlayFair Display';
+    font-weight: 400;
+    font-size: clamp(12px, 3vw, 32px);
+    color: #EBEAEB;
+
+    margin: 10px 0;
+}
+
+.first-section-text-box p{
+    font-family: 'Product Sans';
+    font-weight: 400;
+    font-size: clamp(11px, 3vw, 24px);
+    color: #EBEAEB;
+
+    margin: 0;
+}
+
+.first-section-display{
+    /* background-color: lightblue; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    /* flex-direction: column; */
+
+    flex: 1;
+
+    padding: 0 10px;
+}
+
+.image-frame{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* background-color: lightcyan; */
+
+    height: max-content;
+
+    align-items: center;
+    
+}
+
+.image-frame h2{
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    
+    z-index: 3;
+
+    font-family: 'Product Sans'; 
+    
+    font-weight: 300;
+    text-align: center;
+
+    font-size: clamp(12px, 2.5vw, 28px);
+    margin: 0 auto;
+    color: white;
+}
+
+.background-title {
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+
+    width: clamp(52px, 40vw, 100%);
+    height: clamp(52px, 7vw, 70px);
+    border-radius: 10px;
+    overflow: hidden; /* This should be on the container */
+    box-sizing: border-box;
+}
+
+.background-title h1{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    font-family: 'Product Sans';
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 48px);;
+    margin: 0 auto; 
+
+    color: white;
+}
+
+.background-title img {
+    display: block;
+    width: 100%; /* Make image fill container width */
+    height: 100%; /* Make image fill container height */
+    object-fit: cover; /* Ensures image covers area without distorting */
+}
+
+.gradient-layer{
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 1;
+    width: 95%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    background: linear-gradient(
+        to top,
+        #0D1124 0%,
+        #0D1124 10%,
+        rgba(13, 17, 36, 0) 60%
+    );
+}
+
+.photo-profile {
+    display: block;
+    z-index: 0;
+
+    
+    width: 100%;
+    max-width: 450px;
+    min-width: 250px;
+    
+
+    /* background-color: lightcoral; */
+    border-radius: 10px;
+    overflow: hidden; /* This should be on the container */
+    box-sizing: border-box;
+}
+
+.photo-profile img {
+    display: block;
+    width: 100%; /* Make image fill container width */
+    height: 100%; /* Make image fill container height */
+    object-fit: contain; /* Ensures image covers area without distorting */
+}
+
+@media(max-width: 834px){
+    .box-first-section{
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+        
+    }
+
+    .first-section-text-box{
+        /* background-color: lightgreen; */
+
+        display: flex;
+        flex-direction: column;
+
+        flex: 0 1 auto;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0px;
+
+    }
+
+    .first-section-display{
+        /* background-color: lightblue; */
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        flex: 0 1 auto;
+
+        margin-top: 60px;
+        padding: 0px;
+    }
+
+    .photo-profile {
+        display: block;
+        z-index: 0;
+
+        
+        min-width: 0;
+        max-width: none;
+        width: 270px;
+        
+
+        /* background-color: lightcoral; */
+        border-radius: 10px;
+        overflow: hidden; /* This should be on the container */
+        box-sizing: border-box;
+    }
+
+    .photo-profile img {
+        display: block;
+        width: 100%; /* Make image fill container width */
+        height: 100%; /* Make image fill container height */
+        object-fit: contain; /* Ensures image covers area without distorting */
+    }
+
+    .image-frame h2{
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        right: 0;
+        
+        z-index: 3;
+
+        font-family: 'Product Sans'; 
+        
+        font-weight: 300;
+        text-align: center;
+
+        font-size: clamp(24px, 2.5vw, 28px);
+        margin: 0 auto;
+        color: white;
+    }
+
+    .background-title {
+        position: absolute;
+        bottom: 0px;
+        z-index: 2;
+
+        display: flex;
+        justify-content: center;
+
+        width: clamp(260px, 40vw, 100%);
+        height: clamp(52px, 7vw, 70px);
+        border-radius: 10px;
+        overflow: hidden; /* This should be on the container */
+        box-sizing: border-box;
+    }
+
+    .background-title h1{
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        font-family: 'Product Sans';
+        font-weight: 700;
+        font-size: clamp(28px, 4vw, 48px);;
+        margin: 0 auto; 
+
+        color: white;
+    }
+
+
+    .first-section-text-box h1{
+        font-family: 'PlayFair Display';
+        font-weight: 700;
+        font-size: clamp(36px, 4vw, 48px);
+        color: #EBEAEB;
+
+        margin: 0;
+    }
+
+    .first-section-text-box h2{
+        font-family: 'PlayFair Display';
+        font-weight: 400;
+        font-size: clamp(25px, 3vw, 32px);
+        color: #EBEAEB;
+
+        margin: 10px 0;
+    }
+
+    .first-section-text-box p{
+        font-family: 'Product Sans';
+        font-weight: 400;
+        font-size: clamp(19px, 3vw, 24px);
+        color: #EBEAEB;
+
+        margin: 0;
+    }
+
+
+
+}

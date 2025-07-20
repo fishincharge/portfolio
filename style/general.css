@@ -1,0 +1,193 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    position: relative;
+    
+    height: 5600px;
+    display: block;
+    margin: 0 auto;
+
+    padding: 0 clamp(50px, 9vw, 150px);
+
+    /* background-color: lightcyan; */
+
+    background-image: url('../assets/background-4500.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header{
+    --headerWidth: calc(100%-20px);
+
+    /* background-color: lightcoral; */
+    display: flex;
+    width: var(--headerWidth);
+    height: 220px;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px 0 20px;
+
+}
+
+.text-header{
+    font-family: 'Product Sans';
+    font-weight: 300 !important;
+    font-size: 34px;
+    color: #EBEAEB;
+}
+
+/* Base styling */
+.contact-link {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.contact-link:hover {
+    color: #F2B335; /* Change to your preferred hover color */
+    transform: scale(1.05);
+}
+
+/* Click effect (active state) */
+.contact-link:active {
+    transform: scale(0.98);
+    color: #F2B335; /* Darker shade for click */
+}
+
+/* Visited state (optional) */
+.contact-link:visited {
+    color: #6c757d; /* Change if needed */
+}
+
+.header-wrapper{
+    /* display: none; */
+}
+
+.general-padding{
+    padding: 0;
+}
+
+.carousel {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #F2B335 #0D1124; /* For Firefox */
+
+  
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+.carousel::-webkit-scrollbar {
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+@media (max-width: 853px){
+    body{
+        position: relative;
+        
+        height: 5800px;
+        display: block;
+        margin: 0 auto;
+
+        padding: 0 0 0 0;
+
+        /* background-color: lightcyan; */
+
+        background-image: url('../assets/background-tablet.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .general-padding{
+        padding: 150px 35px 0px 35px;
+    }
+
+    .header-wrapper{
+        background: radial-gradient(circle, #F2B335 0%, #0D1124 100%);
+        /* background-color: lightcoral; */
+        
+        padding: 0px 0px 2px 0px; /* Border thickness */
+        display: flex;
+
+        position: fixed;
+
+        flex-direction: row;
+        align-items: flex-start;
+
+        min-width: 100px;
+        width: 100%;
+        max-width: 1300px;
+
+        height: 53px;
+
+        margin-top: 0px;
+
+        z-index: 99;
+    }
+
+    .header{
+        --headerWidth: calc(100%);
+
+        /* background-color: lightcoral; */
+        display: flex;
+        width: var(--headerWidth);
+        height: 50px;
+        align-items: center;
+        background-color: #0D1124;
+        justify-content: space-between;
+        
+
+        padding: 0;
+
+    }
+
+    .text-header{
+        font-family: 'Product Sans';
+        font-weight: 300 !important;
+        font-size: 18px;
+        margin-bottom: 0;
+        margin-left: 25px;
+        margin-right: 25px;
+        color: #EBEAEB;
+    }
+
+}
+
+@media (max-width: 410px){
+    body{
+        position: relative;
+        
+        height: 5800px;
+        display: block;
+        margin: 0 auto;
+
+        padding: 0 0 0 0;
+
+        /* background-color: lightcyan; */
+
+        background-image: url('../assets/mobile-portfolio-344px-thin.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
